@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    text-decoration: none;
+    color: black
+}
+
+
+/* @import url(./header.css);
+@import url(./footer.css);
+@import url(./main.css); */
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    padding: 5%;
+    background-color: #EAC926;
+    width: 100%;
+}
+
+.logo-barra {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.logo-barra picture {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+}
+
+.logo {
+    justify-content: center;
+    width: 30vw;
+}
+
+.searchBar {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.fa-search {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.fa-search:hover {
+    background-color: #0022AA;
+}
+
+.burger-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.cuotas {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    margin-bottom: 2%;
+}
+
+.fa-bars {
+    color: white;
+    background-color: #1259c3;
+    border-radius: 20%;
+    padding: 1.5%;
+}
+
+.titulares {
+    font-size: 24px;
+    color: #666;
+}
+
+.texto {
+    font-size: 12px;
+}
+
+.productos {
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main-home {
+    background-color: #ebebeb;
+    display: flex;
+    align-items: center;
+    /* width: 90vw; */
+    flex-direction: column;
+}
+
+.articulos1,
+.articulos2 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.card {
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.bajo-foto {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+
+.camion {
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.vajunto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.precios {
+    font-size: 18px;
+    flex-basis: 30%;
+}
+
+.descuentos {
+    font-size: 16px;
+    color: #39b54a;
+    flex-basis: 70%;
+}
+
+article {
+    margin: 10px;
+}
+
+.footer .footer-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-article p {
+    display: flex;
+    text-align: center;
+}
+
+.footer-article {
+    margin-bottom: 10px;
+}
+
+.footer h3 {
+    font-size: 15px;
+}
+
+.footer i {
+    color: #1259c3;
+    margin-bottom: 10px;
+}
+
+.nombreDeUsuario {
+    margin: center;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    border: none;
+}
+
+#search-formA input {
+    border: none;
+    width: 30vw;
+    height: 5vh;
+    border-radius: 8px;
+}
+
+#search-formA button {
+    background-color: #03264C;
+    color: white;
+    width: 30vw;
+    height: 10vh;
+    border-radius: 8px;
+    border: none;
+}
+
+.elInput {
+    display: flex;
+    justify-content: center;
+}
+
+.letra-negrita {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.titulo-boton {
+    display: flex;
+    justify-content: center;
+}
+
+#formulario button {
+    background-color: #03264C;
+    color: white;
+    width: 10vw;
+    height: 5vh;
+    border-radius: 8px;
+    border: none;
+}
+
+.boton {
+    border: none;
+    width: 30vw;
+    height: 5vh;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.ultimo-boton {
+    margin: 5px;
+}
+
+.botoncitos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-home form p {
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .productos {
+        display: none;
+    }
+    .horizontal {
+        display: none;
+    }
+}
+
+
+/* tablet*/
+
+@media (min-width: 769px) {
+    .burger-menu {
+        display: none;
+    }
+    .card {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .van-juntas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    .tablet-desktop {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .horizontal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .primero {
+        justify-content: space-evenly;
+    }
+}
+
+
+/* desktop */
+
+@media (min-width: 1028px) {
+    .burger-menu {
+        display: none;
+    }
+    .card {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .van-juntas {
+        display: flex;
+    }
+    .articulos1,
+    .articulos2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .articulosDelfooter {
+        display: flex;
+        flex-direction: row;
+    }
+}
