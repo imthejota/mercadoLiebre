@@ -17,15 +17,20 @@ body {
 }
 
 header {
+    display: flex;
+    /* atencion aca */
+    flex-direction: column;
+    /* atencion aca */
     padding: 5%;
     background-color: #EAC926;
     width: 100%;
+    padding-bottom: 2%;
 }
 
 .logo-barra {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .logo-barra picture {
@@ -39,17 +44,29 @@ header {
     width: 30vw;
 }
 
+.leForm {
+    display: flex;
+}
+
 .searchBar {
     display: flex;
     flex-basis: 50%;
     justify-content: center;
-    flex-wrap: nowrap;
+    align-self: center;
+    flex-wrap: unwrap;
     flex-direction: row;
+    height: 5vh;
+}
+
+.searchBar input {
+    width: 35vw;
 }
 
 .fa-search {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    width: 3vw;
+    justify-content: center;
 }
 
 .fa-search:hover {
@@ -59,6 +76,7 @@ header {
 .burger-menu {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .cuotas {
@@ -72,12 +90,13 @@ header {
     color: white;
     background-color: #1259c3;
     border-radius: 20%;
-    padding: 1.5%;
+    padding: 1.8%;
 }
 
 .titulares {
     font-size: 24px;
     color: #666;
+    margin-left: 1vw;
 }
 
 .texto {
@@ -191,8 +210,8 @@ article {
 
 #search-formA input {
     border: none;
-    width: 30vw;
-    height: 5vh;
+    width: 40vw;
+    height: 7vh;
     border-radius: 8px;
 }
 
@@ -276,20 +295,67 @@ article {
         flex-wrap: nowrap;
     }
     header {
-        display: flex;
-        flex-direction: column;
+        padding: 3%;
+        height: 15vw;
+        background-color: #EAC926;
     }
     .tablet-desktop {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .horizontal {
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
+    }
+    /*  .tablet-desktop2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        } */
+    .logo-barra {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        flex-basis: 60%;
+        align-items: center;
+    }
+    .searchBar {
+        flex-wrap: nowrap;
+    }
+    .searchBar input {
+        width: 20vw;
+        margin-right: 5px;
+    }
+    .cuotas {
+        display: flex;
+        width: 30vw;
+        padding-top: 2vh;
+    }
+    .horizontal {
+        margin: 2%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: unwrap;
         justify-content: space-between;
     }
     .primero {
+        display: flex;
+        justify-content: space-around;
+        flex-basis: 45%;
+    }
+    .segundo {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: space-evenly;
+        flex-basis: 50%;
+    }
+    .segundo a {
+        display: flex;
+    }
+    .segundo a i {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-left: 3px;
+    }
+    .vacio {
+        display: flex;
+        flex-basis: 30%;
     }
 }
 
@@ -315,5 +381,8 @@ article {
     .articulosDelfooter {
         display: flex;
         flex-direction: row;
+    }
+    .cuotas {
+        padding-top: 3vh;
     }
 }
