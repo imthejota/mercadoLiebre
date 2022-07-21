@@ -31,6 +31,9 @@ server.get('/', function(req, res) {
     res.sendFile(file);
 })
 
+
+
+
 server.get('/register', function(req, res) {
     let file = path.join(__dirname, 'views', 'register.html');
     res.sendFile(file);
